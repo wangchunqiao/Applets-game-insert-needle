@@ -5,5 +5,5 @@
 	<!-- 获奖记录 -->
 	<image catchtap="showRecord" src="http://store.boyaokj.cn/fc/yanjishoukuai/huojingjilu.png" mode="widthFix" class="jl-bt"></image>
 	<!-- 眼疾手快游戏组件 -->
-	<yjsk id="yjsk" outtime="{{outtime}}" turntable_back="{{turntable_back}}" turntable_img="{{turntable_img}}" image_Tips="{{image_Tips}}" startImg="{{startImg}}" marginTop="600rpx" speed="{{speed}}" image_url="http://store.boyaokj.cn/fc/yanjishoukuai/" textList="{{textList}}" minLevel="{{minLevel}}" bind:startGameFun="startGame" bind:insertFun="insertFun" bind:showDialog="showDialog" bind:endGameFun="endGameFun"></yjsk>
+	<yjsk id="yjsk" outtime="{{outtime}}" turntable_back="{{turntable_back}}" turntable_img="{{turntable_img}}" image_Tips="{{image_Tips}}" startImg="{{startImg}}" marginTop="600rpx" speed="{{speed}}" image_url="http://store.boyaokj.cn/fc/yanjishoukuai/" textList="{{textList}}" minLevel="{{minLevel}}" image_prefix="{{image_prefix}}" arrow_prefix="{{arrow_prefix}}" bind:startGameFun="startGame" bind:insertFun="insertFun" bind:showDialog="showDialog" bind:endGameFun="endGameFun"></yjsk>
 </view>

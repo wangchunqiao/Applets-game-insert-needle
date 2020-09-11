@@ -17,6 +17,8 @@ Page({
     dialogShow: 5, // 弹窗，1为未中奖，2为没机会了，3为积分奖励，4为商品奖励，5为玩法说明，6为获奖记录， 0为无弹窗 每次进入页面先是玩法说明
     reward: {}, // 获得的奖励
     recordList: [], // 累计获奖记录
+    image_prefix: 'hong-', // 前缀名
+    arrow_prefix: 'jian-', // 箭矢前缀名
   },
 
   /**

@@ -28,6 +28,6 @@
 
 	<!-- 左侧文字 -->
 	<view class="left-textmages">
-		<image src="{{image_url}}{{level > index ? 'hong-' : ''}}{{item}}.png" class="text-img" mode="widthFix" wx:for="{{textList}}" wx:key="key"></image>
+		<image src="{{image_url}}{{level > index ? image_prefix : ''}}{{item}}.png" class="text-img" mode="widthFix" wx:for="{{textList}}" wx:key="key"></image>
 	</view>
 </view>

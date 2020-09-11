@@ -59,6 +59,16 @@ Component({
       type: Number,
       value: 0
     },
+    // 左侧图片变色前缀名
+    image_prefix: {
+      type: String,
+      value: ''
+    },
+    // 箭矢图片前缀名
+    arrow_prefix: {
+      type: String,
+      value: ''
+    }
   },
   /** 
    * 私有数据,组件的初始数据 
@@ -184,7 +194,7 @@ Component({
       // 生成箭矢参数
       arrows.push({
         dushu: 360 - angle, // 箭矢旋转角度（此处有一点，箭矢图片与轮盘的接触点，也就是箭头，一定是在箭矢图片的上方，不然图片插进去就反了）
-        arrow_img: 'http://store.boyaokj.cn/fc/yanjishoukuai/jian-' + imageText + '.png', // 箭矢图片路径
+        arrow_img: this.data.image_url + this.data.arrow_prefix + imageText + '.png', // 箭矢图片路径
       })
       // 加入箭矢数组
       this.setData({
