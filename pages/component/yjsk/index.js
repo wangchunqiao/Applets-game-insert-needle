@@ -137,6 +137,7 @@ Component({
       }
       // 重置游戏参数
       this.setData({
+        angle: 0,
         level: 1,
         outtime: 25,
         isStart: !1,
@@ -234,7 +235,7 @@ Component({
         // 通关最高级结束游戏
         if (level == 8) {
           this.endGame()
-          this.triggerEvent('endGameFun')
+          this.triggerEvent('endGameFun', 9)
           return
         }
         // 结束之前的计时任务,否则多个任务会互相冲突
