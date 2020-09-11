@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "yjsk": "/pages/component/yjsk/index"
+  },
+  "navigationBarTitleText": "眼疾手快"
+}

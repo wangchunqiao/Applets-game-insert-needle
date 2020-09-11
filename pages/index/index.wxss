@@ -1,0 +1,330 @@
+.game view,
+scroll-view,
+swiper,
+button,
+input,
+textarea,
+label,
+navigator,
+image {
+    box-sizing: content-box;
+}
+
+.page-back {
+  background-image: url('http://store.boyaokj.cn/fc/yanjishoukuai/back.png');
+  background-size: 100% 100%;
+  height: 1836rpx;
+  position: relative;
+}
+.wf-bt {
+  position: absolute;
+  top: 30rpx;
+  right: 0;
+  width: 150rpx;
+}
+
+.jl-bt {
+  position: absolute;
+  top: 90rpx;
+  right: 0;
+  width: 150rpx;
+}
+
+.block-back {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.dialog {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-items: center;
+  z-index: 10000;
+}
+
+.dialog-content {
+  background: #fff;
+  border-radius: 20rpx;
+  padding: 50rpx 20rpx;
+  margin-bottom: 30rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 550rpx;
+}
+
+.box-image {
+  width: 350rpx;
+}
+
+.dialog-title {
+  font-size: 38rpx;
+  font-weight: bold;
+  margin-top: 20rpx;
+  color: #333;
+}
+
+.dialog-title text {
+  color: #E83E28;
+}
+
+.mt20 {
+  margin-top: 20rpx;
+}
+
+.color333 {
+  color: #333;
+}
+
+.dialog-text {
+  font-size: 28rpx;
+  color: #999;
+  margin-bottom: 30rpx;
+}
+
+.dialog-buttom {
+  height: 80rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32rpx;
+  color: #fff !important;
+  border-radius: 50rpx;
+  margin-top: 20rpx;
+  font-weight: 500;
+  width: 495rpx !important;
+  padding: 0;
+}
+
+.red {
+  background: #E63923;
+}
+
+.yellow {
+  background: #ECC873;
+}
+
+.pointImage {
+  width: 100%;
+  height: 157rpx;
+  background-image: url('http://store.boyaokj.cn/fc/yanjishoukuai/coupon-back.png');
+  background-size: 100% 100%;
+  margin: 30rpx 0;
+  display: flex;
+  align-items: center;
+}
+
+.point-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 157rpx;
+  height: 157rpx;
+  font-weight: bold;
+}
+
+.point-num {
+  font-size: 40rpx;
+  line-height: 40rpx;
+  color: #E63923;
+}
+
+.point-text {
+  font-size: 35rpx;
+  color: #E63923;
+}
+
+.point-content {
+  width: 300rpx;
+  height: 157rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 38rpx;
+  color: #333;
+}
+
+.point-right {
+  width: 60rpx;
+  padding: 0 10rpx;
+  height: 157rpx;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+  font-size: 24rpx;
+  font-weight: bold;
+}
+
+.goodsImage {
+  width: 100%;
+  height: 157rpx;
+  background-image: url('http://store.boyaokj.cn/fc/yanjishoukuai/goods-back.jpg');
+  background-size: 100% 100%;
+  margin: 30rpx 0;
+  display: flex;
+  align-items: center;
+}
+
+.goods-name {
+  font-size: 40rpx;
+  font-weight: bold;
+}
+
+.goods-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 450rpx;
+  height: 157rpx;
+  font-weight: bold;
+}
+
+.goods-right {
+  width: 60rpx;
+  padding: 0 10rpx;
+  height: 157rpx;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+  font-size: 24rpx;
+  font-weight: bold;
+}
+
+.hotSale-box {
+  background: #237369;
+  padding: 0 30rpx 30rpx;
+}
+
+.hotSale-item {
+  margin-bottom: 30rpx;
+  background: #fff;
+  border-radius: 15rpx;
+  display: flex;
+  align-items: center;
+}
+
+.hotSale-item-image {
+  width: 305rpx;
+  height: 230rpx;
+  border-radius: 15rpx;
+}
+
+.hotsale-right {
+  display: flex;
+  flex-direction: column;
+  height: 230rpx;
+  padding: 0rpx 20rpx;
+  width: 385rpx;
+}
+
+.right-name {
+  font-size: 32rpx;
+  font-weight: bold;
+  color: #333;
+}
+
+.right-title {
+  font-size: 24rpx;
+  color: #999;
+}
+
+.right-labelList {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.spec-item {
+  font-size: 20rpx;
+  height: 35rpx;
+  line-height: 35rpx;
+  padding: 0 10rpx;
+  margin: 5rpx 0;
+  margin-right: 10rpx;
+}
+
+.right-price {
+  font-size: 28rpx;
+  color: #FE2215;
+  font-weight: bold;
+}
+
+.rewardRecord {
+  width: 100%;
+  border-radius: 50rpx 50rpx 0 0;
+  background: #fff;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: 10000;
+}
+
+.record-title {
+  height: 100rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  font-size: 32rpx;
+  font-weight: bold;
+}
+
+.record-title text{
+  position: absolute;
+  right: 30rpx;
+  font-size: 35rpx;
+}
+
+.recordList {
+  display: flex;
+  flex-direction: column;
+  padding: 30rpx;
+  overflow-y: auto;
+  max-height: 60vh;
+}
+
+.record-item {
+  width: 100%;
+  height: 160rpx;
+  margin-bottom: 30rpx;
+  background-image: url('http://store.boyaokj.cn/fc/yanjishoukuai/coupon-back2.png');
+  background-size: 100% 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.record-centent {
+  width: 400rpx;
+  height: 160rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 35rpx;
+  font-weight: bold;
+}
+
+.record-right {
+  width: 160rpx;
+  height: 160rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28rpx;
+}

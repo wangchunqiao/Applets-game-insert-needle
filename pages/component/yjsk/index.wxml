@@ -1,0 +1,33 @@
+<view class="game" style="top: {{marginTop}}">
+	<!-- 游戏计时 -->
+	<view class="gameOutTime">游戏倒计时：{{outtime}}s</view>
+	<!-- 转盘的背景图 -->
+	<image src="{{turntable_back}}" class="turntable-back" mode="widthFix"></image>
+	<!-- 转盘 angle 参数来转动 -->
+	<view class="turntable" style="transform: rotate({{angle}}deg);">
+		<!-- 针，每个针根据转动幅度来确定位置和角度 -->
+		<image wx:for="{{arrows}}" wx:key="key" style="transform: rotate({{item.dushu}}deg) translateY(250rpx);" class="arrow-img" mode="widthFix" src="{{item.arrow_img}}"></image>
+		<!-- 转盘的图片 -->
+		<image src="{{turntable_img}}" class="turntable-img"></image>
+	</view>
+
+	<!-- 开始游戏后显示模块 -->
+	<view class="startGameBox" wx:if="{{isStart}}">
+		<!-- 指示箭头图片 -->
+		<image src="{{image_Tips}}" mode="widthFix" class="arrow-image"></image>
+		<!-- 剩余次数 -->
+		<view class="surplusNum">你还有<text>{{surplusNum}}</text>次机会</view>
+		<!-- 提示文本 -->
+		<view class="explain-text">插中对应图案视为成功</view>
+		<!-- 用于充当箭矢图片，点击插入箭矢 -->
+		<image src="{{image_url}}{{textList[level - 1]}}.png" mode="widthFix" class="arrow-image-once" catchtap="insert"></image>
+	</view>
+
+	<!-- 开始游戏按钮图片 -->
+	<image src="{{startImg}}" wx:if="{{!isStart}}" mode="widthFix" class="start" catchtap="startGame"></image>
+
+	<!-- 左侧文字 -->
+	<view class="left-textmages">
+		<image src="{{image_url}}{{level > index ? 'hong-' : ''}}{{item}}.png" class="text-img" mode="widthFix" wx:for="{{textList}}" wx:key="key"></image>
+	</view>
+</view>

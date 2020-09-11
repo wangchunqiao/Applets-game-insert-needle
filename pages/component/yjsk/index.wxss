@@ -1,0 +1,101 @@
+.game {
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.gameOutTime {
+    width: 270rpx;
+    height: 45rpx;
+    font-size: 32rpx;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50rpx;
+    background: #FEE9A8;
+    color: #666;
+    border: 4rpx solid #FAC16E;
+    margin-bottom: 30rpx;
+}
+
+.turntable-back {
+    position: absolute;
+    top: 50rpx;
+    width: 100%;
+}
+
+.turntable {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 20;
+}
+
+.turntable-img {
+    width: 400rpx;
+    height: 400rpx;
+    border-radius: 50%;
+}
+
+.arrow-img {
+    width: 100rpx;
+    position: absolute;
+}
+
+.startGameBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.arrow-image {
+    width: 80rpx;
+    margin-top: 50rpx;
+}
+
+.surplusNum {
+    margin: 20rpx 0;
+    font-size: 28rpx;
+    color: #FEC000;
+}
+
+.surplusNum text {
+    font-size: 35rpx;
+}
+
+.explain-text {
+    position: absolute;
+    right: 50rpx;
+    bottom: 135rpx;
+    color: #FFE2A2;
+    width: 180rpx;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.arrow-image-once {
+    width: 150rpx;
+}
+
+.start {
+    width: 380rpx;
+    margin-top: 330rpx;
+}
+
+.left-textmages {
+    position: absolute;
+    left: 50rpx;
+    top: 300rpx;
+    display: flex;
+    flex-direction: column;
+    width: 60rpx;
+}
+
+.text-img {
+    width: 100%;
+    margin-bottom: 10rpx;
+}
